@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*nav bar */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li {
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    padding: 3px 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 3px 10px;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+}
+
+/*home */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: url('../images/home-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 20%;
+    position: absolute;
+}
+
+.headings {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.btn {
+    padding: 10px 35px;
+    background-color:transparent;
+    border: 1px solid white;
+    color: white;
+    transition: .6s ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+
+/* responsive */
+
+@media screen and (max-width: 300px)
+{
+    html {
+        font-size: 25%;
+        width: auto;
+    }
+} 
+
+
+@media screen and (max-width: 600px)
+{
+    html {
+        font-size: 45%;
+        width: auto;
+    }
+} 
+
+@media screen and (max-width: 768px)
+{
+    html {
+        font-size: 50%;
+        width: auto;
+    }
+} 
+
+@media screen and (max-width: 998px)
+{
+    html {
+        font-size: 55%;
+        width: auto;
+    }
+} 

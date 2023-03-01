@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" target="_self">About me</a></li>
+          <li><a href="contact.html" target="_self">Contact Me</a></li>
+          <li><a href="gallery.html" target="_self"> My Gallery</a></li>
+      </ul>
+  </nav>
+    <header>
+      <h1>Get in touch with me</h1>
+    </header>
+    <main>
+      <form method="post" action="submit.html">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

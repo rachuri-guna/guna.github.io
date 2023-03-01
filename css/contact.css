@@ -1,0 +1,54 @@
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  label {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #222;
+    color: white;
+  }
+  
+  button[type="submit"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px white;
+  }
+  

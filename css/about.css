@@ -1,0 +1,81 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #000;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+h1 {
+	margin: 0;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 40px;
+	box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.1);
+}
+
+.bio {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.bio img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	margin-right: 40px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+.bio-content {
+	flex: 1;
+}
+
+.description {
+	padding-bottom: 5px;
+}
+
+.description h2,
+.skills h2,
+.interests h2 {
+	margin-top: 0;
+}
+
+.skills ul,
+.interests ul {
+	list-style: none;
+	padding: 0;
+}
+
+.skills li,
+.interests li {
+	padding: 10px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.skills li:last-child,
+.interests li:last-child {
+	border-bottom: none;
+}
+
+.skills li:hover,
+.interests li:hover {
+	background-color: #333;
+	color: #fff;
+	transform: scale(1.05);
+	transition: all 0.2s ease-in-out;
+}
+
